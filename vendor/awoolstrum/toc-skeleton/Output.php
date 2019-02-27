@@ -171,6 +171,7 @@ class Output extends \GenerateTableOfContents\DirectoryScanner
   protected function uri($path = '', $fileName)
   {
     $url = rtrim($this->pathToGitRepository, '/') . '/tree/' . $this->repositoryMasterBranch;
+	$url .= (mb_strlen($this->documentationDirectory) > 0) ? '/' . $this->documentationDirectory : '';
     return $url . str_replace('\\', '/', $path) . '/' .$fileName;
   }
 }
