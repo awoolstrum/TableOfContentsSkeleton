@@ -34,7 +34,7 @@ $bulletStyle              = '*';
  * @var array
  * An array of lower case file extensions that should be listed and linked to in the table of contents.
  */
-$validFileExtensions      = ['.md']; // []
+$validFileExtensions      = ['md']; // []
 
 /**
  * @var bool
